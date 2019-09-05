@@ -19,7 +19,7 @@ nav .active {
     border-bottom: 1px solid;
 }
 
-#dwlogo {
+.dwlogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
