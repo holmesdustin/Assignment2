@@ -18,9 +18,11 @@ nav .item {
 nav .active {
     border-bottom: 1px solid;
 }
+
 #dwlogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  align-content: center;
 }
