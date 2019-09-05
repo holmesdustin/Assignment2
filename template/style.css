@@ -23,6 +23,7 @@ nav .active {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: auto;
   align-content: center;
+  text-align: center;
 }
