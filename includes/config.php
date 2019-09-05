@@ -8,12 +8,12 @@
 function config($key = '')
 {
     $config = [
-        'name' => 'Simple PHP Website',
+        'name' => 'DW Drums',
         'pretty_uri' => false,
         'site_url' => 'https://csuphpdemo.herokuapp.com',
         'nav_menu' => [
             '' => 'Home',
-            'about-us' => 'About Us',
+            'about-us' => 'About Me',
             'drums' => 'Drums',
         ],
         'template_path' => 'template',
