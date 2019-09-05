@@ -18,7 +18,9 @@ nav .item {
 nav .active {
     border-bottom: 1px solid;
 }
-#dw logo {
-  max-width: 100%;
-  height: auto;
+#dwlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
