@@ -23,3 +23,16 @@ nav .active {
  height: 10%;
  width: 10%;
 }
+#head{
+  background-color: lightblue;
+  color: grey;
+  padding: 40px;
+  text-align: center;
+}
+
+#about{
+  background-color: lightblue;
+  color: black;
+  padding: 24px;
+  text-align: center;
+}
