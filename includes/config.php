@@ -14,7 +14,7 @@ function config($key = '')
         'nav_menu' => [
             '' => 'Home',
             'about-me' => 'About Me',
-            'drums' => 'Drums',
+            'Drums' => 'Drums',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
