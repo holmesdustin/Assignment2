@@ -36,3 +36,10 @@ nav .active {
   padding: 24px;
   text-align: center;
 }
+#home{
+  background-color: rgb(69, 185, 54);
+  color: black;
+  padding: 24px;
+  font-size: 36px;
+  text-align: center;
+}
