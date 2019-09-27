@@ -13,8 +13,7 @@ function config($key = '')
         'site_url' => 'https://dude123456.herokuapp.com',
         'nav_menu' => [
             '' => 'Home',
-            'about-me' => 'About Me',
-            'Drums' => 'Drums',
+            'about-me' => 'About Me'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
