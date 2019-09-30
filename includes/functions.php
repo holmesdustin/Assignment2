@@ -2,9 +2,7 @@
 if (isset($_POST["random"])) {
     getRandomComic();
 };
-/**
- * This Function is used to get Comic img URL from a specific URL
- */
+
 function getComic($url)
 {
     $handle = curl_init();
@@ -23,18 +21,14 @@ function getComic($url)
     echo '<h4>Year: ' . $response['year'] . '</h4><br>';
     echo '<img style="width:100%; height:suto;" src="' . $response['img'] . '" alt= "The picture cannot be shown for some reasons">';
 }
-/**
- * Get Current img
- */
+
 function getCurrentComic()
 {
     $url = "https://xkcd.com/info.0.json";
     getComic($url);
 }
 
-/**
- * Get random 
- */
+
 function getRandomComic()
 {
     $randNum = rand(1, 2000);
