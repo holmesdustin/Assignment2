@@ -33,11 +33,11 @@ function getCurrentComic()
 }
 
 /**
- * Get random img
+ * Get random 
  */
 function getRandomComic()
 {
-    $randNum = rand(1, 2207);
+    $randNum = rand(1, 2000);
     $url = "https://xkcd.com/" . $randNum . "/info.0.json";
     getComic($url);
 }
