@@ -9,10 +9,13 @@
 <div class="jumbotron">
   <h1 class="display-4">XKCD Comic generator!</h1>
   <p class="lead">Go to comics tab to see more comics!</p>
+
+  <!-- ******************************************** -->
   <?php getCurrentComic(); ?>
   <hr class="my-4">
   <p></p>
   <p class="lead">
+
 
   </p>
 </div>
