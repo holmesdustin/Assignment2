@@ -37,7 +37,7 @@
                     $("#randomPic").html(result);
                 },
                 error: function() {
-                    alert("Failed to get comic!");
+                    alert("could not get comic");
                 }
             });
             return false;
