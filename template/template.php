@@ -16,7 +16,7 @@
     </header>
 
     <article>
-        
+
         <?php page_content(); ?>
     </article>
 
@@ -24,5 +24,24 @@
         <small>&copy;<?php echo date('Y'); ?> <?php site_name(); ?>.<br><?php site_version(); ?></small>
     </footer>
 </div>
+ <script>
+        $("#button").click(function() {
+            $.ajax({
+                type: 'post',
+                url: '../includes/functions.php',
+                data: {
+                    "random": true
+                },
+                dataType: "HTML",
+                success: function(result) {
+                    $("#randomPic").html(result);
+                },
+                error: function() {
+                    alert("Failed to get comic!");
+                }
+            });
+            return false;
+        });
+    </script>
 </body>
 </html>
