@@ -8,7 +8,7 @@
 function config($key = '')
 {
     $config = [
-        'name' => 'DW Drums',
+        'name' => 'XKCD Comics!',
         'pretty_uri' => false,
         'site_url' => 'https://dude123456.herokuapp.com',
         'nav_menu' => [
