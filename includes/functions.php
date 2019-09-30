@@ -1,5 +1,47 @@
 <?php
+if (isset($_POST["random"])) {
+    getRandomComic();
+};
+/**
+ * This Function is used to get Comic img URL from a specific URL
+ */
+function getComic($url)
+{
+    $handle = curl_init();
+    curl_setopt($handle, CURLOPT_URL, $url);
+    curl_setopt_array(
+        $handle,
+        array(
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true
+        )
+    );
+    $output = curl_exec($handle);
+    $response = json_decode($output, true);
+    curl_close($handle);
+    echo '<h4>Title: ' . $response['title'] . '</h4><br>';
+    echo '<h4>Year: ' . $response['year'] . '</h4><br>';
+    echo '<img style="width:100%; height:suto;" src="' . $response['img'] . '" alt= "The picture cannot be shown for some reasons">';
+}
+/**
+ * Get Current img
+ */
+function getCurrentComic()
+{
+    $url = "https://xkcd.com/info.0.json";
+    getComic($url);
+}
 
+/**
+ * Get random img
+ */
+function getRandomComic()
+{
+    $randNum = rand(1, 2207);
+    $url = "https://xkcd.com/" . $randNum . "/info.0.json";
+    getComic($url);
+}
+//*********************************************************************************** */
 /**
  * Displays site name.
  */
